@@ -1,0 +1,270 @@
+.name-numerology-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0b2e 50%, #0f0520 100%);
+  padding: 6rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-numerology-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.name-numerology-card h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.name-numerology-card > p {
+  text-align: center;
+  color: #e0e0e0;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(142, 45, 226, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #8e2de2;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.input-group small {
+  display: block;
+  color: #8e2de2;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculate-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(142, 45, 226, 0.5);
+}
+
+.calculate-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loading-animation {
+  text-align: center;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(142, 45, 226, 0.3);
+  border-top-color: #8e2de2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-animation p {
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+.name-result {
+  margin-top: 3rem;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.result-header h3 {
+  color: #8e2de2;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.analyzed-name {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.calculation-box {
+  background: rgba(142, 45, 226, 0.1);
+  border-left: 4px solid #8e2de2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.calculation-box h4 {
+  color: #8e2de2;
+  margin-bottom: 1rem;
+}
+
+.calculation-steps {
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+.calculation-result {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.calculation-result strong {
+  color: #8e2de2;
+  font-size: 1.5rem;
+}
+
+.traits-section {
+  text-align: center;
+}
+
+.number-badge {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 30px rgba(142, 45, 226, 0.4);
+}
+
+.traits-section > h3 {
+  color: #8e2de2;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.trait-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(142, 45, 226, 0.2);
+  text-align: left;
+}
+
+.trait-card h4 {
+  color: #8e2de2;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.trait-card p {
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(142, 45, 226, 0.2);
+}
+
+.info-label {
+  display: block;
+  color: #8e2de2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .name-numerology-container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .name-numerology-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .name-numerology-card h2 {
+    font-size: 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
