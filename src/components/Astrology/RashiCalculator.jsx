@@ -208,7 +208,7 @@ const RashiCalculator = () => {
           {mode === 'manual' ? (
             <>
               <div className="input-group">
-                <label htmlFor="manualRashi">Ìºô Select Your Rashi:</label>
+                <label htmlFor="manualRashi"> Select Your Rashi:</label>
                 <select
                   id="manualRashi"
                   name="manualRashi"
@@ -228,7 +228,7 @@ const RashiCalculator = () => {
               </div>
               
               <div className="input-group">
-                <label htmlFor="date">Ì≥Ö Date of Birth (Optional):</label>
+                <label htmlFor="date"> Date of Birth (Optional):</label>
                 <input
                   id="date"
                   name="date"
@@ -242,7 +242,7 @@ const RashiCalculator = () => {
           ) : (
             <>
               <div className="input-group">
-                <label htmlFor="date">Ì≥Ö Date of Birth:</label>
+                <label htmlFor="date"> Date of Birth:</label>
                 <input
                   id="date"
                   name="date"
@@ -255,7 +255,7 @@ const RashiCalculator = () => {
               </div>
 
               <div className="input-group">
-                <label htmlFor="time">Ìµê Time of Birth:</label>
+                <label htmlFor="time"> Time of Birth:</label>
                 <input
                   id="time"
                   name="time"
@@ -272,21 +272,21 @@ const RashiCalculator = () => {
                   className={locationMode === 'city' ? 'location-btn active' : 'location-btn'}
                   onClick={() => setLocationMode('city')}
                 >
-                  Ì≥ç Select City
+                   Select City
                 </button>
                 <button 
                   type="button"
                   className={locationMode === 'coordinates' ? 'location-btn active' : 'location-btn'}
                   onClick={() => setLocationMode('coordinates')}
                 >
-                  Ìºê Enter Coordinates
+                   Enter Coordinates
                 </button>
               </div>
 
               {locationMode === 'city' ? (
                 <>
                   <div className="input-group">
-                    <label htmlFor="city">Ì≥ç Birth Place:</label>
+                    <label htmlFor="city"> Birth Place:</label>
                     <select
                       id="city"
                       name="city"
@@ -302,7 +302,7 @@ const RashiCalculator = () => {
 
                   {formData.city === 'Other' && (
                     <div className="input-group">
-                      <label htmlFor="customCity">ÌøôÔ∏è Enter Your City Name:</label>
+                      <label htmlFor="customCity"> Enter Your City Name:</label>
                       <input
                         id="customCity"
                         name="customCity"
@@ -321,7 +321,7 @@ const RashiCalculator = () => {
               ) : (
                 <>
                   <div className="input-group">
-                    <label htmlFor="latitude">Ìºç Latitude:</label>
+                    <label htmlFor="latitude"> Latitude:</label>
                     <input
                       id="latitude"
                       name="latitude"
@@ -338,7 +338,7 @@ const RashiCalculator = () => {
                   </div>
 
                   <div className="input-group">
-                    <label htmlFor="longitude">Ìºé Longitude:</label>
+                    <label htmlFor="longitude"> Longitude:</label>
                     <input
                       id="longitude"
                       name="longitude"
@@ -356,20 +356,20 @@ const RashiCalculator = () => {
           )}
 
           <button type="submit" className="calculate-btn" disabled={loading}>
-            {loading ? '‚è≥ Calculating...' : 'Ì¥Æ Get My Rashi Report'}
+            {loading ? '‚è≥ Calculating...' : ' Get My Rashi Report'}
           </button>
         </form>
 
         {result && (
           <div className="results">
             <div className="result-header">
-              <h3>Ìºô Your Rashi Report</h3>
+              <h3> Your Rashi Report</h3>
               <div className="birth-details">
-                <p>Ì≥Ö Birth Date: {result.birthDetails.date}</p>
-                {result.birthDetails.time && <p>Ìµê Birth Time: {result.birthDetails.time}</p>}
-                {result.birthDetails.city && <p>Ì≥ç Birth Place: {result.birthDetails.city}</p>}
-                {result.birthDetails.mode && <p>Ì≥ù Mode: {result.birthDetails.mode}</p>}
-                {result.birthDetails.method && <p>Ì¥¨ Method: {result.birthDetails.method}</p>}
+                <p> Birth Date: {result.birthDetails.date}</p>
+                {result.birthDetails.time && <p> Birth Time: {result.birthDetails.time}</p>}
+                {result.birthDetails.city && <p> Birth Place: {result.birthDetails.city}</p>}
+                {result.birthDetails.mode && <p> Mode: {result.birthDetails.mode}</p>}
+                {result.birthDetails.method && <p> Method: {result.birthDetails.method}</p>}
               </div>
             </div>
 
@@ -390,37 +390,37 @@ const RashiCalculator = () => {
 
               <div className="expandable-sections">
                 <DetailSection 
-                  title="Ì≥ñ Personality Overview" 
+                  title=" Personality Overview" 
                   content={result.info.personality}
                   sectionKey="personality"
                 />
                 <ListSection 
-                  title="Ì≤™ Strengths" 
+                  title=" Strengths" 
                   items={result.info.strengths}
                   sectionKey="strengths"
                 />
                 <ListSection 
-                  title="‚ö†Ô∏è Weaknesses" 
+                  title=" Weaknesses" 
                   items={result.info.weaknesses}
                   sectionKey="weaknesses"
                 />
                 <DetailSection 
-                  title="Ì≤º Career Guidance" 
+                  title=" Career Guidance" 
                   content={result.info.career}
                   sectionKey="career"
                 />
                 <DetailSection 
-                  title="‚ù§Ô∏è Love & Relationships" 
+                  title=" Love & Relationships" 
                   content={result.info.love}
                   sectionKey="love"
                 />
                 <DetailSection 
-                  title="Ìø• Health Concerns" 
+                  title=" Health Concerns" 
                   content={result.info.health}
                   sectionKey="health"
                 />
                 <DetailSection 
-                  title="Ìºü Life Guidance" 
+                  title=" Life Guidance" 
                   content={result.info.guidance}
                   sectionKey="guidance"
                 />
@@ -428,7 +428,7 @@ const RashiCalculator = () => {
             </div>
 
             <div className="info-note">
-              <p>Ì≤° <strong>Tip:</strong> If your city is not in the list, use "Other" option or enter coordinates directly from Google Maps. Right-click any location on Google Maps and select "Copy coordinates" to get exact latitude/longitude.</p>
+              <p> <strong>Tip:</strong> If your city is not in the list, use "Other" option or enter coordinates directly from Google Maps. Right-click any location on Google Maps and select "Copy coordinates" to get exact latitude/longitude.</p>
             </div>
           </div>
         )}

@@ -106,13 +106,13 @@ const CompatibilityPage = () => {
   return (
     <div className="compatibility-container">
       <div className="compatibility-card">
-        <h2>Ì≤ï Compatibility Calculator Ì≤ï</h2>
+        <h2> Compatibility Calculator </h2>
         <p>Discover how compatible you are based on numerology</p>
 
         <form onSubmit={handleCalculate}>
           <div className="person-inputs">
             <div className="person-section">
-              <h3>Ì±§ Person 1</h3>
+              <h3> Person 1</h3>
               <input
                 type="text"
                 placeholder="Enter name"
@@ -132,7 +132,7 @@ const CompatibilityPage = () => {
             <div className="heart-divider">‚ù§Ô∏è</div>
 
             <div className="person-section">
-              <h3>Ì±§ Person 2</h3>
+              <h3> Person 2</h3>
               <input
                 type="text"
                 placeholder="Enter name"
@@ -151,7 +151,7 @@ const CompatibilityPage = () => {
           </div>
 
           <button type="submit" className="check-btn" disabled={loading}>
-            {loading ? '‚è≥ Calculating...' : 'Ì¥Æ Check Compatibility'}
+            {loading ? '‚è≥ Calculating...' : ' Check Compatibility'}
           </button>
         </form>
 
@@ -171,7 +171,7 @@ const CompatibilityPage = () => {
               </div>
               <p className="compatibility-message">{result.compatibility.message}</p>
               <div className="advice-box">
-                <h4>Ì≤° Advice for Your Relationship:</h4>
+                <h4> Advice for Your Relationship:</h4>
                 <p>{result.compatibility.advice}</p>
               </div>
             </div>

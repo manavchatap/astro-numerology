@@ -84,55 +84,55 @@ const MulankCalculator = () => {
 
       <div className="expandable-sections">
         <DetailSection 
-          title="í³– Personality Overview" 
+          title=" Personality Overview" 
           content={traits.personality}
           sectionKey={`${prefix}-personality`}
         />
         
         <ListSection 
-          title="í²ª Strengths" 
+          title=" Strengths" 
           items={traits.strengths}
           sectionKey={`${prefix}-strengths`}
         />
         
         <ListSection 
-          title="âš ï¸ Weaknesses" 
+          title=" Weaknesses" 
           items={traits.weaknesses}
           sectionKey={`${prefix}-weaknesses`}
         />
         
         <DetailSection 
-          title="í²¼ Career Guidance" 
+          title=" Career Guidance" 
           content={traits.career}
           sectionKey={`${prefix}-career`}
         />
         
         <DetailSection 
-          title="â¤ï¸ Relationships & Love" 
+          title=" Relationships & Love" 
           content={traits.relationships}
           sectionKey={`${prefix}-relationships`}
         />
         
         <DetailSection 
-          title="í¿¥ Health Concerns" 
+          title=" Health Concerns" 
           content={traits.healthConcerns}
           sectionKey={`${prefix}-health`}
         />
         
         <DetailSection 
-          title="í¼Ÿ Life Guidance" 
+          title=" Life Guidance" 
           content={traits.guidance}
           sectionKey={`${prefix}-guidance`}
         />
         
         <DetailSection 
-          title="íµ‰ï¸ Spiritual Practices" 
+          title=" Spiritual Practices" 
           content={traits.spiritualPractice}
           sectionKey={`${prefix}-spiritual`}
         />
         
         <DetailSection 
-          title="í´® Remedies & Solutions" 
+          title=" Remedies & Solutions" 
           content={traits.remedies}
           sectionKey={`${prefix}-remedies`}
         />
@@ -148,7 +148,7 @@ const MulankCalculator = () => {
         
         <form onSubmit={handleCalculate}>
           <div className="input-group">
-            <label htmlFor="dob">í¾‚ Enter Your Date of Birth:</label>
+            <label htmlFor="dob"> Enter Your Date of Birth:</label>
             <input
               id="dob"
               type="date"
@@ -158,19 +158,19 @@ const MulankCalculator = () => {
               required
             />
           </div>
-          <button type="submit" className="calculate-btn">í´® Calculate My Numbers</button>
+          <button type="submit" className="calculate-btn"> Calculate My Numbers</button>
         </form>
 
         {result && (
           <div className="results">
             <div className="result-header">
-              <h3>í¾¯ Your Complete Numerology Report</h3>
+              <h3> Your Complete Numerology Report</h3>
               <p>Date of Birth: {result.dob}</p>
             </div>
 
             <div className="result-cards">
               {renderNumberCard(
-                'í¼Ÿ Mulank (Birth Number)',
+                'â­ Mulank (Birth Number)',
                 result.mulank,
                 result.mulankTraits,
                 'mulank'
@@ -185,7 +185,7 @@ const MulankCalculator = () => {
             </div>
 
             <div className="info-note">
-              <p>í²¡ <strong>Note:</strong> Mulank represents your personality and natural tendencies, while Bhagyank represents your life path and destiny. Click on each section to explore detailed insights!</p>
+              <p> <strong>Note:</strong> Mulank represents your personality and natural tendencies, while Bhagyank represents your life path and destiny. Click on each section to explore detailed insights!</p>
             </div>
           </div>
         )}

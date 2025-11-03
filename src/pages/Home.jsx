@@ -31,7 +31,7 @@ const Home = () => {
 
           <div className="cta-buttons">
             <Link to="/numerology" className="cta-btn primary-btn">
-              <span className="btn-icon">í´¢</span>
+              <span className="btn-icon"></span>
               <span className="btn-text">
                 <strong>Numerology</strong>
                 <small>Discover your numbers</small>
@@ -60,7 +60,7 @@ const Home = () => {
         
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">í¼Ÿ</div>
+            <div className="feature-icon"></div>
             <h3>Mulank & Bhagyank</h3>
             <p>Calculate your Birth Number and Destiny Number to understand your core personality and life path</p>
             <div className="feature-tags">
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">í¼™</div>
+            <div className="feature-icon"></div>
             <h3>Moon Sign (Rashi)</h3>
             <p>Discover your Vedic moon sign based on birth time and location for accurate astrological insights</p>
             <div className="feature-tags">
@@ -80,7 +80,7 @@ const Home = () => {
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">í²«</div>
+            <div className="feature-icon"></div>
             <h3>Detailed Guidance</h3>
             <p>Get comprehensive personality analysis, career guidance, health tips, and life recommendations</p>
             <div className="feature-tags">
@@ -90,7 +90,7 @@ const Home = () => {
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">í´®</div>
+            <div className="feature-icon"></div>
             <h3>Remedies & Solutions</h3>
             <p>Learn spiritual practices, lucky colors, gemstones, and mantras specific to your numbers</p>
             <div className="feature-tags">

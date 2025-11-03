@@ -185,7 +185,7 @@ const NameNumerologyPage = () => {
   return (
     <div className="name-numerology-container">
       <div className="name-numerology-card">
-        <h2>Ì¥§ Name Numerology Calculator ÔøΩÔøΩ</h2>
+        <h2> Name Numerology Calculator </h2>
         <p>Discover what your name reveals about your personality and destiny</p>
 
         <form onSubmit={handleCalculate}>
@@ -217,12 +217,12 @@ const NameNumerologyPage = () => {
         {result && !loading && (
           <div className="name-result">
             <div className="result-header">
-              <h3>Ì≥ä Your Name Analysis</h3>
+              <h3> Your Name Analysis</h3>
               <p className="analyzed-name">{result.name}</p>
             </div>
 
             <div className="calculation-box">
-              <h4>Ì¥¢ Calculation:</h4>
+              <h4> Calculation:</h4>
               <p className="calculation-steps">{result.calculation}</p>
               <p className="calculation-result">Name Number = <strong>{result.number}</strong></p>
             </div>
@@ -232,27 +232,27 @@ const NameNumerologyPage = () => {
               <h3>{result.traits.title}</h3>
 
               <div className="trait-card">
-                <h4>Ì±§ Personality</h4>
+                <h4> Personality</h4>
                 <p>{result.traits.personality}</p>
               </div>
 
               <div className="trait-card">
-                <h4>Ì≤™ Strengths</h4>
+                <h4> Strengths</h4>
                 <p>{result.traits.strengths}</p>
               </div>
 
               <div className="trait-card">
-                <h4>‚ö†Ô∏è Challenges</h4>
+                <h4> Challenges</h4>
                 <p>{result.traits.challenges}</p>
               </div>
 
               <div className="trait-card">
-                <h4>Ì≤º Career Paths</h4>
+                <h4> Career Paths</h4>
                 <p>{result.traits.career}</p>
               </div>
 
               <div className="trait-card">
-                <h4>‚ù§Ô∏è Relationships</h4>
+                <h4> Relationships</h4>
                 <p>{result.traits.relationships}</p>
               </div>
 
